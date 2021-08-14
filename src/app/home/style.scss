@@ -1,0 +1,121 @@
+html {
+  scroll-behavior: smooth;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+html {
+  ::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+  }
+}
+#step1 {
+  background-image: url(./background.svg);
+  object-fit: cover;
+  position: relative;
+  background-size: auto 100vh;
+  background-repeat: no-repeat;
+  background: linear-gradient(180deg, #8ac4d7 9.54%, #a1d2e1 34.58%, rgba(161, 210, 225, 0) 100%);
+}
+#step1 {
+  height: 100vh;
+
+  .navbar {
+    position: relative;
+    height: 80px;
+    background-color: white;
+    top: 60px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    .container {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      .column {
+        display: inline-block;
+      }
+      .logo {
+        margin-right: 10%;
+      }
+      .logo:hover {
+        cursor: pointer;
+      }
+      .text {
+        margin-right: 5%;
+      }
+      .text:hover {
+        border-bottom: 2px #5890a2 solid;
+        cursor: pointer;
+      }
+      .text-end {
+        margin-right: 25%;
+      }
+      .search {
+        font-size: 16px;
+        width: 300px;
+      }
+      .search-input {
+        width: 100%;
+        right: 20px;
+        border-radius: 30px;
+        padding: 10px;
+        border: solid 2px;
+      }
+      .search-input:focus {
+        outline: none;
+      }
+    }
+  }
+  .app-name {
+    position: relative;
+    top: 20%;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: bold;
+  }
+  .start-button {
+    position: relative;
+    width: 260px;
+    height: 79px;
+    background: #aee1f1;
+    box-shadow: 0px 2px 21px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 48px;
+    top: 30%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 45px;
+    color: #584d4d;
+    text-align: center;
+    appearance: none;
+    border: 2px solid #aee1f1;
+    transition: 0.3s;
+  }
+  .start-button:hover {
+    background: #377285;
+    color: white;
+    box-shadow: 3px 5px 21px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
+}
+#step2 {
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(161, 210, 225, 0) 10%, #a1d2e1 90%, #8ac4d7 100%);
+  .body-step2 {
+    position: relative;
+
+    margin: auto;
+    top: 50px;
+    width: 600px;
+    height: 600px;
+    color: #333;
+    box-shadow: 3px 5px 21px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    .title-step2 {
+      font-size: 36px;
+      text-align: center;
+    }
+    .name {
+      display: inline-block;
+      text-align: left;
+    }
+  }
+}
