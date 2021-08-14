@@ -9,7 +9,11 @@ html {
     display: none;
   }
 }
-#step1 {
+#step1,
+#step2,
+#step3,
+#step4 {
+  height: 100vh;
   object-fit: cover;
   position: relative;
   background-size: auto 100vh;
@@ -17,8 +21,6 @@ html {
   background: linear-gradient(180deg, #8ac4d7 9.54%, #a1d2e1 34.58%, rgba(161, 210, 225, 0) 100%);
 }
 #step1 {
-  height: 100vh;
-
   .navbar {
     position: relative;
     height: 80px;
@@ -96,7 +98,6 @@ html {
   }
 }
 #step2 {
-  height: 100vh;
   background: linear-gradient(180deg, rgba(161, 210, 225, 0) 10%, #a1d2e1 90%, #8ac4d7 100%);
   .body-step2 {
     position: relative;
@@ -210,13 +211,158 @@ html {
           background-image: url(./man.svg);
           display: inline-block;
           margin-left: 40px;
+          opacity: 0.5;
         }
         .girl {
           height: 80px;
           width: 80px;
           display: inline-block;
           background-image: url(./girl.svg);
+          opacity: 0.5;
         }
+      }
+      .text-sex {
+        margin-right: 15%;
+        margin-top: 10px;
+        .text {
+          display: inline-block;
+          margin-right: 95px;
+        }
+      }
+    }
+    .switch-button {
+      margin-top: 50px;
+      color: #333;
+      .button {
+        font-size: 16px;
+        display: inline-block;
+        width: 110px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #aee1f1;
+        border: 2px #aee1f1 solid;
+      }
+      .end {
+        margin-left: 200px;
+      }
+      .button:hover {
+        background-color: #5cb7d3;
+        border: 2px #346c7e solid;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+#step3 {
+  background: linear-gradient(180deg, #8ac4d7 9.54%, #a1d2e1 34.58%, rgba(161, 210, 225, 0) 100%);
+  .body-step3 {
+    position: relative;
+
+    margin: auto;
+    top: 50px;
+    width: 600px;
+    height: 600px;
+    color: #333;
+    box-shadow: 3px 5px 21px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: white;
+    .title-step3 {
+      padding: 20px;
+      font-size: 36px;
+      text-align: center;
+    }
+    .choice-step {
+      margin-left: 30%;
+      margin-top: 60px;
+      .choice {
+        padding: 15px;
+        margin-top: 20px;
+        background-color: #92e2fa;
+        width: 250px;
+        height: 20px;
+        border-radius: 10px;
+        border: 3px solid #92e2fa;
+      }
+      .choice:hover {
+        transition: 0.3s;
+        cursor: pointer;
+        background-color: #5fcaeb;
+        border: 3px solid #48abc9;
+      }
+    }
+    .switch-button {
+      margin-top: 130px;
+      color: #333;
+      .button {
+        font-size: 16px;
+        display: inline-block;
+        width: 110px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #aee1f1;
+        border: 2px #aee1f1 solid;
+      }
+      .end {
+        margin-left: 200px;
+      }
+      .button:hover {
+        transition: 0.3s;
+        background-color: #5cb7d3;
+        border: 2px #346c7e solid;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+#step4 {
+  background: linear-gradient(180deg, rgba(161, 210, 225, 0) 10%, #a1d2e1 90%, #8ac4d7 100%);
+  .body-step4 {
+    position: relative;
+
+    margin: auto;
+    top: 50px;
+    width: 600px;
+    height: 600px;
+    color: #333;
+    box-shadow: 3px 5px 21px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: white;
+    .title-step4 {
+      padding: 20px;
+      font-size: 36px;
+      text-align: center;
+    }
+    .choice-step {
+      width: 200px;
+      height: 200px;
+      img {
+        width: 100px;
+        height: 100px;
+        background-image: url(./body.jpg);
+      }
+    }
+    .switch-button {
+      margin-top: 130px;
+      color: #333;
+      .button {
+        font-size: 16px;
+        display: inline-block;
+        width: 110px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #aee1f1;
+        border: 2px #aee1f1 solid;
+      }
+      .end {
+        margin-left: 200px;
+      }
+      .button:hover {
+        transition: 0.3s;
+        background-color: #5cb7d3;
+        border: 2px #346c7e solid;
+        cursor: pointer;
       }
     }
   }
